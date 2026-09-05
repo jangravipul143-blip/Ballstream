@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Video Hub</title>
+  <meta name="description" content="Watch entertaining videos online.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">MY VIDEO HUB</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="eyebrow">ENTERTAINMENT</span>
+    <h1>Watch. Discover. Enjoy.</h1>
+    <p>Explore entertaining videos in one simple place.</p>
+    <input id="searchInput" type="search" placeholder="Search videos..." aria-label="Search videos">
+  </section>
+
+  <section class="videos-section">
+    <div class="section-heading">
+      <h2>Latest Videos</h2>
+      <span id="resultCount"></span>
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+      <article class="video-card" data-title="Amazing Nature">
+        <img src="https://picsum.photos/800/450?random=1" alt="Amazing Nature thumbnail">
+        <div class="video-info">
+          <span class="tag">Nature</span>
+          <h3>Amazing Nature</h3>
+          <p>Beautiful nature and outdoor footage.</p>
+          <a class="watch-btn" href="video.html?id=1">Watch Video</a>
+        </div>
+      </article>
+
+      <article class="video-card" data-title="Travel Adventure">
+        <img src="https://picsum.photos/800/450?random=2" alt="Travel Adventure thumbnail">
+        <div class="video-info">
+          <span class="tag">Travel</span>
+          <h3>Travel Adventure</h3>
+          <p>An entertaining travel experience.</p>
+          <a class="watch-btn" href="video.html?id=2">Watch Video</a>
+        </div>
+      </article>
+
+      <article class="video-card" data-title="Amazing City">
+        <img src="https://picsum.photos/800/450?random=3" alt="Amazing City thumbnail">
+        <div class="video-info">
+          <span class="tag">City</span>
+          <h3>Amazing City</h3>
+          <p>Explore an amazing city.</p>
+          <a class="watch-btn" href="video.html?id=3">Watch Video</a>
+        </div>
+      </article>
+
+      <article class="video-card" data-title="Wildlife">
+        <img src="https://picsum.photos/800/450?random=4" alt="Wildlife thumbnail">
+        <div class="video-info">
+          <span class="tag">Wildlife</span>
+          <h3>Wildlife</h3>
+          <p>Interesting wildlife footage.</p>
+          <a class="watch-btn" href="video.html?id=4">Watch Video</a>
+        </div>
+      </article>
+    </div>
+
+    <p id="noResults" class="no-results" hidden>No videos found.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 My Video Hub</p>
+  <div>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

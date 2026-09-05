@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Video - My Video Hub</title>
+  <meta name="description" content="Watch an entertainment video.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">MY VIDEO HUB</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="player-section">
+    <a class="back-link" href="index.html">← Back to videos</a>
+
+    <div class="player-box">
+      <!--
+        IMPORTANT:
+        Replace YOUR_VIDEO_URL.mp4 with the DIRECT URL of a video
+        that you own or have permission to publish.
+
+        Example:
+        <source src="https://example.com/my-video.mp4" type="video/mp4">
+
+        If your video host gives you an iframe/embed player instead,
+        use the embed code supplied by that host instead of this <video>.
+      -->
+      <video id="mainVideo" controls preload="metadata"
+             poster="https://picsum.photos/1200/675?random=10">
+        <source src="YOUR_VIDEO_URL.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <div class="video-details">
+      <span class="tag">Featured</span>
+      <h1>Amazing Nature</h1>
+      <p>
+        This is a sample video page. Replace the video URL, title,
+        thumbnail and description with your own legally publishable content.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 My Video Hub</p>
+</footer>
+</body>
+</html>
